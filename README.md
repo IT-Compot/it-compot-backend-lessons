@@ -15,7 +15,7 @@
 8.  [Lesson](lessons/lesson-8/tutorial.md)  Добавление видео, сохранение данных с клиента в БД и углубление в шаблонизацию
 9.  [Lesson](lessons/lesson-9/tutorial.md)  Оценки на посты
 10. [Lesson](lessons/lesson-10/tutorial.md) Использование URL-имен и редиректов
-11. [Lesson](lessons/lesson-11/tutorial.md) `Магазин` начало
+11. [Lesson](lessons/lesson-11/first.md) `Магазин` начало
 12. [Lesson](lessons/lesson-12/tutorial.md) Учимся минимально работать с Git
 13. [Lesson](lessons/lesson-13/tutorial.md) Карточка товара
 14. [Lesson](lessons/lesson-14/tutorial.md) Шаблонизация вывода товаров и заказов
