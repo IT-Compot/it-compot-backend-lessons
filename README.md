@@ -17,15 +17,15 @@
 10. [Lesson](lessons/lesson-10/tutorial.md) Использование URL-имен и редиректов
 11. [Lesson](lessons/lesson-11/first.md) `Магазин` начало
 12. [Lesson](lessons/lesson-12/tutorial.md) Учимся минимально работать с Git
-13. [Lesson](lessons/lesson-13/tutorial.md) Карточка товара
-14. [Lesson](lessons/lesson-14/tutorial.md) Шаблонизация вывода товаров и заказов
-15. [Lesson](lessons/lesson-15/tutorial.md) Рендер внутренних URL, динамические маршруты
-16. [Lesson](lessons/lesson-16/tutorial.md) Оформление заказа
-17. [Lesson](lessons/lesson-17/tutorial.md) Пользователи и сессии
-18. [Lesson](lessons/lesson-18/tutorial.md) Регистрация, вход, выход
-19. [Lesson](lessons/lesson-19/tutorial.md) Шаблонизация в зависимости от аутентифицированности и права доступа 
-20. [Lesson](lessons/lesson-20/tutorial.md) Пользователи в моделях
-21. [Lesson](lessons/lesson-21/tutorial.md) Вспоминаем JS и меняем тему на сайте
+13. [Lesson](lessons/lesson-13/tutorial.md) Создание модели товара. Медиа пути
+14. [Lesson](lessons/lesson-14/tutorial.md) Шаблонизация вывода товаров. Настройка админки
+15. [Lesson](lessons/lesson-15/tutorial.md) Создание модели заказов и их шаблонизация
+16. [Lesson](lessons/lesson-16/tutorial.md) Логика контроллера product detail
+17. [Lesson](lessons/lesson-17/tutorial.md) Оформление заказа
+18. [Lesson](lessons/lesson-18/tutorial.md) Переход на base.html. Подготвка к работе с авторизацией
+19. [Lesson](lessons/lesson-19/tutorial.md) Работа с логикой signin, signup и signout
+20. [Lesson](lessons/lesson-20/tutorial.md) Шаблонизация в зависимости от аутентифицированности и права доступа
+21. [Lesson](lessons/lesson-21/tutorial.md) Вспоминаем про модели и продолжаем работать с пользователями
 22. [Lesson](lessons/lesson-22/tutorial.md) Создаем свою модель пользователя
 23. [Lesson](lessons/lesson-23/tutorial.md) `Кинопоиск` Проектирование сущностей
 24. [Lesson](lessons/lesson-24/tutorial.md) Адреса и страницы
