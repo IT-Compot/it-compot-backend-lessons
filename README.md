@@ -22,11 +22,10 @@
 15. [Lesson](lessons/lesson-15/tutorial.md) Создание модели заказов и их шаблонизация
 16. [Lesson](lessons/lesson-16/tutorial.md) Логика контроллера product detail
 17. [Lesson](lessons/lesson-17/tutorial.md) Оформление заказа
-18. [Lesson](lessons/lesson-18/tutorial.md) Переход на base.html. Подготвка к работе с авторизацией
-19. [Lesson](lessons/lesson-19/tutorial.md) Работа с логикой signin, signup и signout
-20. [Lesson](lessons/lesson-20/tutorial.md) Шаблонизация в зависимости от аутентифицированности и права доступа
-21. [Lesson](lessons/lesson-21/tutorial.md) Вспоминаем про модели и продолжаем работать с пользователями
-22. [Lesson](lessons/lesson-22/tutorial.md) Создаем свою модель пользователя
+18. [Lesson](lessons/lesson-18.1/tutorial.md) Переход на base.html. Подготвка к работе с авторизацией
+19. [Lesson](lessons/lesson-18.2/tutorial.md) Работа с логикой signin, signup и signout
+20. [Lesson](lessons/lesson-19.1/tutorial.md) Шаблонизация в зависимости от аутентифицированности и права доступа
+21. [Lesson](lessons/lesson-19.2/tutorial.md) Вспоминаем про модели и продолжаем работать с пользователями
 23. [Lesson](lessons/lesson-23/tutorial.md) `Кинопоиск` Проектирование сущностей
 24. [Lesson](lessons/lesson-24/tutorial.md) Адреса и страницы
 25. [Lesson](lessons/lesson-25/tutorial.md) Контроллеры
