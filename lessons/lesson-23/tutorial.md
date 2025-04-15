@@ -38,7 +38,7 @@
 Модель: `User`
 
 ##### 2. kinopoisk:
-Страницы: `signin`, `signup`, `signout`, `profile`  
+Страницы: `movies`, `actor`, `director`, `genre`  
 Модели: `Movie`, `MoviePerson`, `MovieReview`, `Genre`
 
 > ⚠️ **Вопрос:** Почему и там и там повторяются страницы? Потому что `Core` отвечает за пользователей, а `kinopoisk` — за контент. Это как рецепты и повара — и то, и другое нужно, но отвечает за них разное.
