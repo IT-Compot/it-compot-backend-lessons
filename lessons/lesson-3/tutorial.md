@@ -94,11 +94,25 @@
     ```
     Дальше пусть ученики сделают оформление формы (минуты 3-6).
 
-3.  ## Получение данных во view
+4.  ## Передача данных в шаблон.
+    Показываем как получать данные из запроса и предложите самим попробовать вывести на страницу их число.<br>
+    Объясняем, что такое request.
+    ##### Учим использовать `print()`
+       > С помощью print можно тестировать какие данные присутствуют на том или ином этапе выполнения кода.<br>
+       В дальнейшем используйте, если что-то не понятно или что-то не работает.
     ```python
     # Core/views.py
+    import random
     def magic_number(request):
-        return render(request, 'Core/magic_number.html', {'result': 'Победа'})
+        # Получаем данные из request
+        number = request.POST['number']
+        print(request.POST)
+        print(number)
+        # познакомьте учеников с полями обьекта request: WSGIRequest 
+        # print(request.method) как пример, мы его будем использовать далее.
+    
+        # вместо [] правильнее использовать .get() и использовать дополнительные проверки, 'ошибка' допущена специально.
+        return render(request, 'Core/magic_number.html', {'result': number})
     ```
     ```html
     <!-- Core/magic_number.html -->
@@ -122,38 +136,7 @@
         Она берет шаблон *(template_path)* и `контекст`, комбинирует их вместе,
         заменяя в шаблоне `{{ ИМЯ ПЕРЕДАННОГО ПАРАМЕТРА }}` на значение этого параметра
         и возвращает результат как HTTP-ответ с готовой HTML-страницей.<br><br>
-        Попробуйте `распечатать render()` ради интереса.
-        ```python
-        # Core/views.py
-        def magic_number(request):
-            print(
-                render(request, 'Core/magic_number.html', {'result': number})
-            )
-            return render(request, 'Core/magic_number.html', {'result': 'Победа'})
-        ```
-        Раздел про это есть в 
-        **[шпаргалке](https://github.com/xlartas/it-compot-backend-methods/blob/main/django-base.md#%D0%BE%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B0-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%BA%D0%BB%D0%B8%D0%B5%D0%BD%D1%82%D1%83)**.
 
-4.  ## Передача данных в шаблон.
-    Показываем как получать данные из запроса и предложите самим попробовать вывести на страницу их число.<br>
-    Объясняем, что такое request.
-    ##### Учим использовать `print()`
-       > С помощью print можно тестировать какие данные присутствуют на том или ином этапе выполнения кода.<br>
-       В дальнейшем используйте, если что-то не понятно или что-то не работает.
-    ```python
-    # Core/views.py
-    import random
-    def magic_number(request):
-        # Получаем данные из request
-        number = request.POST['number']
-        print(request.POST)
-        print(number)
-        # познакомьте учеников с полями обьекта request: WSGIRequest 
-        # print(request.method) как пример, мы его будем использовать далее.
-    
-        # вместо [] правильнее использовать .get() и использовать дополнительные проверки, 'ошибка' допущена специально.
-        return render(request, 'Core/magic_number.html', {'result': number})
-    ```
     ### Не идете дальше если возникают трудности, не спешите, оставьте на следующий урок. Повторите пройденное целиком лучше.
         
     
