@@ -16,6 +16,7 @@
    * Windows 10/11 - https://code.visualstudio.com/
    * Windows 8 - https://code.visualstudio.com/updates/v1_79
    * Windows 7 - https://code.visualstudio.com/updates/v1_70
+   * Mac OS - https://code.visualstudio.com/sha/download?build=stable&os=darwin-universal
   
 2. ### Принимаем пользовательское соглашение.
    ![](imgs/acceptVSCode.png)
