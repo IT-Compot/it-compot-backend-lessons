@@ -126,7 +126,7 @@ def posts_list(request):
 
 Представьте, что у нас много коробок на складе. Мы говорим Django: "Принеси ВСЕ коробки!"
 
-``python
+```python
 # blog/views.py
 from .models import Post
 
