@@ -88,7 +88,8 @@
 
 2. **Активация *виртуального окружения*.**
 
-    `./venv_name/Scripts/activate`<br>
+    Для Windows: `./venv_name/Scripts/activate`<br>
+    Для macOS и Linux: `source bin/activate`<br>
  
 3. **Установка *django*.<br>**
    Рассказываем, что такое pip и django это и зачем.<br>
