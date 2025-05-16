@@ -119,14 +119,14 @@
 > **База данных** **сохраняет** всё, что мы потом создадим!
 
 
-    ```python
+```python
     # blog/models.py
     from django.db import models
 
     class Post(models.Model):
         title = models.CharField(max_length=70)
         text = models.TextField()
-    ```
+```
 
     ➔ Объясняем:
     - Класс `Post` описывает, как будет выглядеть таблица в БД.
