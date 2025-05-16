@@ -30,8 +30,7 @@ def posts_list(request):
     return render(request, 'blog/posts_list.html')
 ```
 Теперь подключаем эту площадь (страницу) к маршрутам города (сайта):
-```
-python
+```python
 # project_name/urls.py
 from blog.views import posts_list  # импортируем функцию
 
