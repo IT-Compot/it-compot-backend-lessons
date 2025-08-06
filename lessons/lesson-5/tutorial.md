@@ -125,6 +125,7 @@
 
     class Post(models.Model):
         title = models.CharField(max_length=70)
+        image = models.ImageField(upload_to='images/')
         text = models.TextField()
 ```
 
@@ -140,8 +141,15 @@
     ```
 
     ➔ Django создаёт файл-инструкцию, что и как нужно изменить в базе данных.
+   
+    **Ошибка с Pillow
+    - Показать ошибку о Pillow, объяснить, как исправить:
 
-4. **Выполнение миграций**
+    ```bash
+    pip install Pillow
+    ```
+
+5. **Выполнение миграций**
 
     ```bash
     python manage.py migrate
@@ -149,20 +157,20 @@
 
     ➔ Реальные изменения применяются к базе данных, создаётся таблица для модели `Post`.
 
-5. **Установим расширение SQLite Viewer**
+6. **Установим расширение SQLite Viewer**
 
     ➔ Это плагин для VS Code, чтобы смотреть содержимое базы данных прямо в редакторе.
 
-6. **Что произошло в базе данных**
+7. **Что произошло в базе данных**
 
     ➔ Показываем файл `db.sqlite3` и таблицу, созданную для модели `Post`.
 
-7. **Административная панель Django**
+8. **Административная панель Django**
 
     - Это удобный встроенный инструмент для управления данными через браузер.
     - Позволяет добавлять, редактировать, удалять записи без написания кода.
 
-8. **Регистрируем модель в админке**
+9. **Регистрируем модель в админке**
 
     ```python
     # blog/admin.py
@@ -178,7 +186,7 @@
     - Мы говорим Django, что хотим видеть модель `Post` в панели администратора.
     - `list_display` настраивает отображаемые столбцы.
 
-9. **Создаём администратора**
+10. **Создаём администратора**
 
     ```bash
     python manage.py createsuperuser
@@ -186,36 +194,9 @@
 
     ➔ Создаём учётку администратора для входа в `/admin/`.
 
-10. **Создаём посты через админку**
+11. **Создаём посты через админку**
 
     ➔ Заходим в `/admin/`, создаём записи для проверки, что всё работает.
-
-11. **Делаем модель более интересной**
-
-    ```python
-    class Post(models.Model):
-        title = models.CharField(max_length=70)
-        image = models.ImageField(upload_to='images/')
-        text = models.TextField()
-        likes = models.IntegerField(blank=True)
-        rating = models.FloatField(blank=True)
-        is_published = models.BooleanField(default=True)
-        created_at = models.DateTimeField(auto_now_add=True)
-    ```
-
-    ➔ Объясняем:
-    - `ImageField` — для загрузки изображений (обязательно установить библиотеку Pillow).
-    - `IntegerField`, `FloatField` — числовые поля.
-    - `BooleanField` — для отметки публикации поста.
-    - `DateTimeField` — автоматически фиксирует дату создания.
-
-    ➔ Не забываем:
-    - Создать миграции после изменений (`makemigrations`, `migrate`).
-    - Показать ошибку о Pillow, объяснить, как исправить:
-
-    ```bash
-    pip install Pillow
-    ```
 
 12. **Что такое медиафайлы**
 
@@ -250,6 +231,27 @@
     - `MEDIA_ROOT` — куда сохранять загруженные файлы на сервере.
 
 ---
+
+##Если осталось время:
+**Делаем модель более интересной**
+
+    ```python
+    class Post(models.Model):
+        title = models.CharField(max_length=70)
+        image = models.ImageField(upload_to='images/')
+        text = models.TextField()
+        likes = models.IntegerField(blank=True)
+        rating = models.FloatField(blank=True)
+        is_published = models.BooleanField(default=True)
+        created_at = models.DateTimeField(auto_now_add=True)
+    ```
+
+    ➔ Объясняем:
+    - `ImageField` — для загрузки изображений (обязательно установить библиотеку Pillow).
+    - `IntegerField`, `FloatField` — числовые поля.
+    - `BooleanField` — для отметки публикации поста.
+    - `DateTimeField` — автоматически фиксирует дату создания.
+
 
 ## Итоги занятия
 
