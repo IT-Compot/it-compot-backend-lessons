@@ -1,6 +1,7 @@
 # ORM, for, if в шаблонах
 
 ---
+# Если не успели создать суперюзера и создать посты в админке, то делаем сегодня. Взамен даём ученикам готовый html с последней части урока, чтобы был акцент на понимании Бэка
 
 ## Введение
 
@@ -175,33 +176,8 @@ def posts_list(request):
     </div>
 </main>
 ```
-6. Как показать только опубликованные посты?
-Логика простая:
 
-Некоторые коробки у нас ещё не готовы. Мы хотим показать только те, которые уже проверены.
-```html
-Добавляем if:
-<!-- blog/posts_list.html -->
-<main>
-    <h1 class="text-light text-center fw-bold">Посты</h1>
-    <div class="posts_container d-flex gap-3 flex-wrap justify-content-center mx-auto" 
-         style="max-width: 800px;">
-
-        {% for post in posts %}
-            {% if post.is_published == True %}
-                <div class="card" style="width: 250px;">
-                    <img src="{{ post.image.url }}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ post.title }}</h5>
-                        <p class="card-text">{{ post.text }}</p>
-                    </div>
-                </div>
-            {% endif %}
-        {% endfor %}
-    </div>
-</main>
-```
-Итоги
+## Итоги
 
 Мы научились создавать страницу для отображения постов.
 
